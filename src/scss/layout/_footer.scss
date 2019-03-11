@@ -1,0 +1,52 @@
+
+
+footer{
+	.topFooter{
+		background: #AA1E23;
+		*{
+			color: #ffffff;
+		}
+		.col{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items:center;
+			> div{
+				padding-right: 50px;
+			}
+			span{
+				font-size: 3rem;
+				font-weight: 900;
+				font-family: $headingFont;
+				text-transform: uppercase;
+				line-height: 4rem;
+			}
+		}
+	}
+	.bottomFooter{
+		background: #404041;
+		*{
+			color: #ffffff;
+		}
+
+		.a1Text{
+			font-size: 2.4rem;
+		    font-weight: 900;
+		}
+
+		.row{
+			.col{
+
+			}
+		}
+
+		.socialIcons{
+			margin-bottom: 30px;
+		}
+
+		.hoursAddress{
+			font-size: 2rem;
+			align-self:flex-end;
+		}
+	}
+}

@@ -11,3 +11,209 @@ img{
 	max-width: 100%;
 	height: auto;
 }
+
+
+
+.redBg{
+	background: $red;
+}
+.blueBg{
+	background:$blue;
+}
+
+.whiteBg{
+	background:#ffffff;
+}
+
+.col.lightGreyBg{
+	background-color:#E8E9EC;
+	padding:20px;
+}
+
+
+.parallax{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.row{
+	 padding: 5rem 0;
+
+	 .col{
+	 	*:last-child{
+	 		margin-bottom: 0px;
+	 	}
+	 }
+}
+
+
+
+
+
+.quickAboutIconRow{
+	display: flex;
+	flex-wrap: wrap;
+	.col{
+		display: flex;
+		width: 50%;
+		max-width:50%;
+
+		margin: 30px 0;
+
+		.greyIcon{
+		    background: #E8E9EC;
+		    width: 100%;
+		    max-width: 140px;
+		    display: flex;
+		    margin-right: 30px;
+		    img{
+		    	align-self: center;
+		    }
+
+		    + div{
+	    	    display: flex;
+			    flex-direction: column;
+			    justify-content: center;
+
+			    p{
+			    	margin-bottom: 0px;
+			    }
+		    }
+		}
+	}
+}
+
+
+
+
+
+.ourStepsRow{
+	.col{
+		padding:0px;
+		position:relative;
+		p{
+			margin-bottom: 0px;
+		}
+		> div{
+			background:$blue;
+			position: absolute;
+			bottom: 80px;
+			padding:10px;
+			*{
+				color: #ffffff;
+			}
+			h4{
+				font-size: 2.8rem;
+				text-transform: uppercase;
+				margin-bottom: 0px;
+			}
+		}
+	}
+}
+
+
+
+
+.recentPosts{
+	display: flex;
+	.recentPost{
+		background:#ffffff;
+		box-shadow: 2px 2px 7px rgba(0,0,0,0.2);
+		margin-right: 15px;
+		margin-left:15px;
+		padding:30px;
+
+		.date{
+			background:$blue;
+			color: #ffffff;
+			font-size: 2rem;
+			padding:5px;
+			
+		}
+
+		h3{
+			margin-top: 30px;
+			a{
+				color: #404041;
+				font-size: 2.8rem;
+			}
+		}
+
+	}
+}
+
+
+
+
+.aaaCertModuleContainer{
+	background-color:#979797;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	padding:20px;
+	> div{
+		&:first-child{
+			width: 60%;
+		}
+	}
+}
+
+
+
+
+
+
+.whiteBgBlock{
+	.whiteBg{
+		padding:20px;
+		height: 100%;
+	}
+}
+
+
+
+
+
+
+
+.service_items{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	.service_item{
+		padding:20px;
+		display: block;
+		background:#ffffff;
+		width: 250px;
+		margin-top:30px;
+		margin-bottom: 30px !important;
+		text-decoration: none;
+		box-shadow:0px 0px 10px rgba(0,0,0,0.5);
+
+		&:hover{
+			box-shadow:none;
+		}
+
+		img{
+			margin-bottom: 15px;
+		}
+
+		h5{
+			color: #404041;
+			font-weight: 900;
+		}
+
+
+		p{
+			color: #404041;
+			margin-bottom: 0px;
+		}
+
+
+	}
+}
+
+
+

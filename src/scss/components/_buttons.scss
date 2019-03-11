@@ -1,0 +1,20 @@
+
+.btn{
+	border:1px solid #ffffff;
+	color: #FFFFFF;
+	background: transparent;
+	border-radius: 0px;
+	font-size:2rem;
+	padding: 5px 20px;
+
+	&:hover{
+		background:rgba(0,0,0,0.2);
+		border:1px solid #ffffff;
+	}
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
+	border:1px solid #ffffff;
+	color: #FFFFFF;
+	background: transparent;
+}
