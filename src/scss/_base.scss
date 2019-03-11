@@ -1,0 +1,13 @@
+/* This stylesheet is for any custom classes you create in your child theme. See below for examples */
+
+*{
+	font-size: inherit;
+}
+body{
+	font-family: $baseFont;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}

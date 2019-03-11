@@ -1,0 +1,26 @@
+/* This stylesheet is only used for responsive states */
+
+/* MINIMUM WIDTH OF 1199PX */
+@media only screen and (min-width: $screen-lg-min) {
+
+}
+
+/* MINIMUM WIDTH OF 992PX AND MAX WIDTH OF 1198PX */
+@media only screen and (max-width: $screen-lg-max) {
+
+}
+
+/* MINIMUM WIDTH OF 768PX AND MAX WIDTH OF 991PX */
+@media only screen and (max-width: $screen-md-max) {
+	
+}
+
+/* MINIMUM WIDTH OF 576PX AND MAX WIDTH OF 767PX */
+@media only screen and (max-width: $screen-sm-max) {
+
+}
+
+/* MAX WIDTH OF 575PX */
+@media only screen and (max-width: $screen-xsm-max) {
+
+}
