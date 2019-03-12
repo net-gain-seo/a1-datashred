@@ -25,6 +25,8 @@ add_action( 'wp_enqueue_scripts', 'ns_child_scripts' );
 
 
 
+add_image_size( 'featuredBlogImage', 330,380 , true );
+add_image_size( 'featuredBlogImage2', 330,155 , true );
 
 
 
@@ -169,3 +171,107 @@ function service_item($atts) {
     return $return;
 }
 add_shortcode('service_item','service_item');
+
+
+function green_box_item($atts) {
+    extract( shortcode_atts( array(
+        'class' => '',
+        'icon' => '',
+        'title' => '',
+        'content' => ''
+      ), $atts ) );
+
+       $return = '';
+
+    $return .= '<div class="green_box_item">';
+        $return .= '<img src="'.$icon.'" />';
+        $return .= '<h5>'.$title.'</h5>';
+        $return .= '<p>'.$content.'</p>';
+    $return .= '</div>';
+    
+    return $return;
+}
+add_shortcode('green_box_item','green_box_item');
+
+
+
+function numbered_item($atts) {
+    extract( shortcode_atts( array(
+        'class' => '',
+        'content' => '',
+        'number' => '1'
+      ), $atts ) );
+
+       $return = '';
+
+     $return .= '<div class="numbered_item">';
+        $return .= '<span class="theNumber">'.$number.'</span>';
+        $return .= '<p>'.$content.'</p>';
+    $return .= '</div>';
+    
+    return $return;
+}
+add_shortcode('numbered_item','numbered_item');
+
+
+
+
+
+
+
+
+
+/// ADD CUSTOM FIELDS FOR BLOG POST
+function post_add_meta_box() {
+    add_meta_box( 'post_meta_box',
+        'Page Mast Title (leave blank to use page title)',
+        'display_post_meta_box',
+        'post'
+    );
+}
+
+add_action( 'admin_init', 'post_add_meta_box' );
+
+function display_post_meta_box() {
+    global $post;
+
+    $is_featured = esc_html( get_post_meta( $post->ID, 'is_featured', true ) );
+   
+    ?>
+
+    <table style="width: 100%;">
+        <tr>
+            <td style="width: 100%;padding-bottom: 20px;">
+                <label><input type="checkbox" value="1" <?php if($is_featured == '1'){ echo 'checked'; } ?> name="is_featured" value="<?php echo $is_featured; ?>" /> Is Featured</label>
+            </td>
+        </tr>
+
+        <input type="hidden" name="post_flag" value="true" />
+    </table>
+<?php
+}
+
+function update_post_meta_box( $post_id, $post ) {
+    if ( $post->post_type == 'post' ) {
+        if ( isset($_POST['post_flag']) ) {
+
+            if ( isset( $_POST['is_featured'] ) && $_POST['is_featured'] != '' ) {
+                update_post_meta( $post_id, 'is_featured', $_POST['is_featured'] );
+            } else {
+                update_post_meta( $post_id, 'is_featured', '0' );
+            }
+            
+        }
+    }
+}
+
+add_action( 'save_post', 'update_post_meta_box', 10, 2 );
+
+
+
+
+
+function a1_scripts() {
+    wp_enqueue_script( 'a1_scripts', get_stylesheet_directory_uri() . '/js/scripts.js', 'jquery', '2.9', true );
+}
+add_action( 'wp_enqueue_scripts', 'a1_scripts', 1 );
