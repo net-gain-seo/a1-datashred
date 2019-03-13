@@ -30,7 +30,7 @@
                         <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/social/twitter.png" /></a>
                         <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/social/linked-in.png" /></a>
                     </div>
-                    <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/review-us-on-google.png" /></a>
+                    <a href="https://www.google.com/search?q=a1+datashred+boston&oq=a1+datashred+boston&aqs=chrome..69i57.3087j1j7&sourceid=chrome&ie=UTF-8#lrd=0x89e371c55da4250d:0x445a24481af83378,1,,," target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/review-us-on-google.png" /></a>
                 </div>
                 <div class="col col-3 text-right hoursAddress">
                     <span><strong>Hours</strong></span><br/>

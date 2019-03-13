@@ -2,6 +2,14 @@
 header{
 	position:relative;
 	z-index: 1000;
+
+	&.sticky{
+		.menuContainer{
+			position:fixed;
+			top: -200px;
+		}
+	}
+
 	.logoContainer{
 		padding-bottom:20px;
 		#logo{
@@ -33,7 +41,7 @@ header{
 
 			#mainNav{
 				width: 100%;	
-				#menu-main-menu{
+				#menu-main-menu-1{
 					list-style: none;
 					padding-left:0px;
 					display: flex;
@@ -109,6 +117,89 @@ header{
 					}
 				}
 			}
+		}
+	}
+}
+
+#mobileNavButtons{
+	a{
+		color: #414042;
+		font-size: 2rem;
+	    padding: 20px
+	}
+}
+
+#mobileNav{
+	position: fixed;
+    z-index: 10000;
+    background: #E8E9EC;
+    height: 100%;
+    width: 300px;
+    padding: 20px;
+    overflow-y: scroll;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    top: 0px;
+    left: -2000px;
+    transition: .5s;
+    &.open{
+    	left: 0px;
+    }
+
+    .mobileMenuToggle{
+    	background:$red;
+    	margin-bottom: 10px;
+    	display: block;
+    }
+
+    #menu-main-menu{
+		list-style: none;
+		padding-left:0px;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 0px;
+		justify-content: flex-end;
+
+
+		 li{
+			position: relative;
+			&.current-menu-item{
+				a{
+					color: #AA1E23;
+				}
+			}
+			> a{
+				font-size: 2rem;
+				color: $darkGrey;
+				text-transform: uppercase;
+				padding: 5px 10px;
+				display: block;
+
+
+				&:hover{
+					text-decoration: none;
+					color: #AA1E23;
+				}
+
+			}
+
+			&.redBtn{
+				a{
+					background:$red;
+					color: #ffffff;
+				}
+			}
+
+
+			> .sub-menu{
+				list-style: none;
+				padding-left:10px;
+			}
+			&:hover{
+				> .sub-menu{
+					display: block;
+				}
+			}
+
 		}
 	}
 }

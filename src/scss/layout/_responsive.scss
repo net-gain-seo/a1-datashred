@@ -1,26 +1,322 @@
 /* This stylesheet is only used for responsive states */
 
+
+#mobileNavButtons{
+	display: none;
+}
+
 /* MINIMUM WIDTH OF 1199PX */
 @media only screen and (min-width: $screen-lg-min) {
+	/*
+	body{
+		background: red;
+	}
+	*/
+
+
 
 }
 
 /* MINIMUM WIDTH OF 992PX AND MAX WIDTH OF 1198PX */
 @media only screen and (max-width: $screen-lg-max) {
+	/*
+	body{
+		background: green;
+	}
+	*/
+	html{
+		font-size: 8px;
+	}
+
+	.mast.home-mast .mast_title{
+		padding: 155px 0;
+	}	
+
+	.service_items .service_item{
+		width: 290px;
+	}
+
+	.featuredBlogCards>div.blogCardStyle1>div{
+		width: 480px;
+	}
+	.featuredBlogCards>div.blogCardStyle1>div+div {
+	    width: 480px;
+	}
+	.featuredBlogCards>div>div{
+		width: 470px;
+	}
+	.blogCardStyle4{
+		width: 470px;
+	}
 
 }
 
 /* MINIMUM WIDTH OF 768PX AND MAX WIDTH OF 991PX */
 @media only screen and (max-width: $screen-md-max) {
-	
+	/*
+	body{
+		background: blue;
+	}
+	*/
+	#mainNav{
+		display: none;
+	}
+	#mobileNavButtons{
+		display: flex;
+		justify-content:flex-end;
+		width: 100%;
+	}
+
+	#logo img{
+		width: 280px;
+	}
+
+	.reviewSection > img{
+		width: 150px;
+	}
+
+	.mast.home-mast .mast_title{
+		padding: 100px 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	.whyChooseLogos{
+		img{
+			width: 100px;
+			height: auto;
+		}
+	}
+
+	.col-3{
+	    width: 50%;
+	    max-width: 50%;
+	    flex: 0 0 50%;
+	    text-align: center;
+	    margin: 10px 0;
+	    &:last-child{
+	    	margin-bottom: 0;
+	    }
+	}
+
+	.ourStepsRow .col{
+		 > div {
+		    position: relative;
+		    bottom: 0;
+		}
+		  img{
+	    	width: 100%;
+	    	height: auto;
+	    }
+	}
+
+	.mast.innerPage{
+		background-size: cover;
+		.container-fluid {
+			background: rgba(0,0,0,0.5);
+		}
+	}
+	.mast.innerPage .mast_content{
+		max-width: 100%;
+		width: 100%;
+		flex:0 0 100%;
+		text-align: center;
+	}
+
+	.service_items .service_item{
+		width: 330px;
+	}
+
+	.environmentalBanner{
+		text-align: center;
+		.col-9{
+			width: 100%;
+			flex: 0 0 100%;
+			max-width:100%;
+		}
+		img{
+			display: none;
+		}
+	}
+
+	.featuredBlogCards>div.blogCardStyle1>div{
+		width: 480px;
+	}
+	.featuredBlogCards>div.blogCardStyle1>div+div {
+	    width: 100%;
+	}
+	.featuredBlogCards>div>div{
+		width: 100%;
+	}
+	.blogCardStyle4{
+		width: 100%;
+	}
+	.featuredBlogCards>div.blogCardStyle1>div:first-child{
+		display: none;
+	}
 }
 
 /* MINIMUM WIDTH OF 576PX AND MAX WIDTH OF 767PX */
 @media only screen and (max-width: $screen-sm-max) {
+	/*
+	body{
+		background: purple;
+	}
+	*/
+	html{
+		font-size: 6px;
+	}
+
+	.pl-0{
+		padding-left:15px !important;
+	}
+	.pr-0{
+		padding-right:15px !important;
+	}
+
+	.reviewSection > a > img{
+		width: 150px;
+	}
+
+
+	.quickAboutIconRow .col{
+	    width: 100%;
+	    max-width: 100%;
+	}
+
+	.service_items .service_item{
+		width: 100%;
+	}
+	
+	.green_box_items .green_box_item{
+		width: 100%;
+	}
+
+	footer{
+		.topFooter{
+			.col{
+				flex-direction: column;
+	    		text-align: center;
+	    		>div{
+	    			padding-right: 0px;
+	    		}
+	    		> a{
+	    			margin-top: 20px;
+	    		}
+			}
+		}
+		.bottomFooter .socialIcons{
+			img{
+				width: 25px;
+				height: 25px;
+			}
+		}
+	}
+
+	.recentPosts{
+		flex-direction: column;
+		.recentPost{
+			margin-top: 20px;
+			text-align: center;
+			&:first-child{
+				margin-top: 0px;
+			}
+		}
+	}
+
+	.col-3{
+	    width: 100%;
+	    max-width: 100%;
+	    flex: 0 0 100%;
+	    text-align: center;
+	    margin: 10px 0;
+	    &:last-child{
+	    	margin-bottom: 0;
+	    }
+	}
+
+	.col-4{
+	    width: 100%;
+	    max-width: 100%;
+	    flex: 0 0 100%;
+	    text-align: center;
+	    margin: 10px 0;
+	    &:last-child{
+	    	margin-bottom: 0;
+	    }
+	}
+
+
+
 
 }
 
 /* MAX WIDTH OF 575PX */
 @media only screen and (max-width: $screen-xsm-max) {
+	/*
+	body{
+		background: orange;
+	}
+	*/
 
+	.reviewSection{
+		display: none !important;
+	}
+
+	.logoContainer{ 
+		div.row{
+			div{
+				width: 100%;
+				text-align:center;
+			}
+		}
+	}
+
+
+
+
+
+	.mast.home-mast .redBg .container .row .col{
+		padding-right:0px !important;
+		padding-left:0px !important;
+	}
+	.mast.home-mast .redBg .container .row:after{
+		display: none;
+	}
+
+	.col-6{
+	    width: 100%;
+	    max-width: 100%;
+	    flex: 0 0 100%;
+	    text-align: center;
+	    margin: 10px 0;
+	    &:last-child{
+	    	margin-bottom: 0;
+	    }
+	}
+
+	.col-12{
+		text-align: center;
+	}
+
+
+	footer{
+		.bottomFooter{
+			> div{
+				> div.row{
+					flex-direction: column;
+					text-align: center;
+					justify-content: center;
+					align-items: center !important;
+
+					.col{
+						width: 100% !important;
+					    max-width: 100%;
+				        text-align: center !important;
+				        margin-bottom: 20px;
+					}
+				}
+			}
+		}
+	}
 }

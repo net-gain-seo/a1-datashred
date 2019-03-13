@@ -12,7 +12,9 @@ img{
 	height: auto;
 }
 
-
+iframe{
+	max-width:100%;
+}
 
 .redBg{
 	background: $red;
@@ -543,5 +545,24 @@ div.wpcf7{
 				margin-left: 0px;
 			}
 		}
+	}
+
+	.wpcf7-submit{
+		background:#AA1E23;
+		color: #ffffff;
+		text-transform: uppercase;
+		font-family: $headingFont;
+	}
+}
+
+
+
+#quotePop{
+	.modal-content{
+	    border-radius: 10px;
+	    overflow: hidden;
+	}
+	.modal-body{
+		background:#E8E9EC;
 	}
 }
