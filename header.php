@@ -25,7 +25,7 @@
               </div>
               <div class="reviewSection">
                 <a href="https://www.google.com/search?q=a1+datashred+boston&oq=a1+datashred+boston&aqs=chrome..69i57.3087j1j7&sourceid=chrome&ie=UTF-8#lrd=0x89e371c55da4250d:0x445a24481af83378,1,,," target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/review-us-on-google.png" /></a>
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/1-888-95-shred.png" />
+                <a href="tel:19788580200" class="nav-phone"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/1-888-95-shred.png" /></a>
               </div>
            </div>
         </div>

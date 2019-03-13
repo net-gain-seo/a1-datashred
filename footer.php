@@ -8,7 +8,7 @@
                     <div>
                         <span>We are committed to serving our clients with integrity and a high level of customer service.</span>
                     </div>
-                    <a hred="#" class="btn">Book Your Secure Shredding</a>
+                    <a href="<?php echo bloginfo('url'); ?>/contact-us/" class="btn">Book Your Secure Shredding</a>
                 </div>
             </div>
         </div>
@@ -20,15 +20,15 @@
                     <span class="a1Text">A1 DATASHRED provides secure shredding services in Boston and throughout Massachusetts.</span>
                 </div>
                 <div class="col col-6 text-right">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/1-888-95-shred-white-text.png" />
+                    <a href="tel:19788580200" class="nav-phone"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/1-888-95-shred-white-text.png" /></a>
                 </div>
             </div>
             <div class="row pb-0">
                 <div class="col col-3">
                     <div class="socialIcons">
-                        <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/social/facebook.png" /></a>
-                        <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/social/twitter.png" /></a>
-                        <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/social/linked-in.png" /></a>
+                        <a href="https://www.facebook.com/allmediashred/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/social/facebook.png" /></a>
+                        <a href="https://twitter.com/A1DATASHRED?lang=en" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/social/twitter.png" /></a>
+                        <a href="https://www.linkedin.com/company/a1-datashred" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/social/linked-in.png" /></a>
                     </div>
                     <a href="https://www.google.com/search?q=a1+datashred+boston&oq=a1+datashred+boston&aqs=chrome..69i57.3087j1j7&sourceid=chrome&ie=UTF-8#lrd=0x89e371c55da4250d:0x445a24481af83378,1,,," target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/review-us-on-google.png" /></a>
                 </div>
@@ -53,7 +53,7 @@
                     Copyright© A1 DATASHRED  2019
                 </div>
                 <div class="col col-6 text-right">
-                    Website Designed by <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/netgain-logo.png" />
+                    <a href="https://www.netgainseo.com" target="_blank" alt="Website Designed by NetGain">Website Designed by NetGain</a>
                 </div>
             </div>
         </div>
