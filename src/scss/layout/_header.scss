@@ -7,6 +7,11 @@ header{
 		.menuContainer{
 			position:fixed;
 			top: -200px;
+
+			.callContainer{
+				display: block;
+			}
+
 		}
 	}
 
@@ -35,7 +40,20 @@ header{
 	}
 
 	.menuContainer{
-		background: #E8E9EC;
+		background:#ffffff;
+		width: 100%;
+
+		.menuSection{
+			background: #E8E9EC;
+		}
+
+		.callContainer{
+			display: none;
+			.col{
+				padding:10px 0;
+			}
+		}
+
 		.row{
 			padding: 0px;
 
@@ -74,6 +92,11 @@ header{
 							a{
 								background:$red;
 								color: #ffffff;
+								transition: background-color 200ms linear;
+								&:hover{
+									background: $blue;
+
+								}
 							}
 						}
 
@@ -259,6 +282,17 @@ header{
 		background-position:right;
 		background-repeat:no-repeat;
 		background-size: 49% auto;
+	    height: 325px;
+
+	    .container-fluid {
+	    	height: 100%;
+	    	.container{
+	    		height: 100%;
+	    		.row{
+	    			height: 100%;
+	    		}
+	    	}
+	    }
 
 		.row{
 			padding:0px;
@@ -270,8 +304,11 @@ header{
 		}
 
 		.mast_content{
-			padding-top:50px;
-			padding-bottom:50px;
+			padding-top: 10px;
+		    padding-bottom: 10px;
+		    display: flex;
+		    flex-direction: column;
+		    align-self: center;
 		}
 		.mast_content{
 			p{

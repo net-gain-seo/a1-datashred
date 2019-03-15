@@ -559,10 +559,16 @@ div.wpcf7{
 
 #quotePop{
 	.modal-content{
-	    border-radius: 10px;
 	    overflow: hidden;
 	}
 	.modal-body{
 		background:#E8E9EC;
+	}
+}
+
+
+.page-id-12 {
+	.topFooter{
+		display: none;
 	}
 }

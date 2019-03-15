@@ -14,7 +14,7 @@
                     });
                     $('body .site-header').addClass('sticky');
                 }
-            }else if($(this).scrollTop() <= 155){
+            }else if($(this).scrollTop() <= 75){
                 $('body .site-header').removeClass('sticky');
             }
             

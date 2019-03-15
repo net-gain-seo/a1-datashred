@@ -53,7 +53,7 @@
                     Copyright© A1 DATASHRED  2019
                 </div>
                 <div class="col col-6 text-right">
-                    <a href="https://www.netgainseo.com" target="_blank" alt="Website Designed by NetGain">Website Designed by NetGain</a>
+                    <a href="https://www.netgainseo.com" target="_blank" title="Website Designed by NetGain">Website Designed by NetGain</a>
                 </div>
             </div>
         </div>

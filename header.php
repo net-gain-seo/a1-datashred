@@ -30,30 +30,43 @@
            </div>
         </div>
       </div>
-      <div class="container-fluid menuContainer">
-        <div class="container">
-           <div class="row"> 
-              <nav id="mainNav">
-                <?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'container' => '' ) ); ?>
-              </nav>
-
-              <div id="mobileNavButtons">
-                <a href="javascript:void(0);" class="mobileMenuToggle">
-                  <i class="fa fa-bars"></i>
-                  <span>MENU</span>
-                </a>
-                <a href="tel:19788580200" class="nav-phone">
-                  <i class="fa fa-phone"></i>
-                  <span>CALL</span>
-                </a>
-
-                <a href="<?php echo bloginfo('url'); ?>/contact-us/" class="nav-contact">
-                  <i class="fa fa-envelope"></i>
-                  <span>CONTACT</span>
-                </a>
+      <div class="menuContainer">
+        
+        <div class="container-fluid callContainer">
+          <div class="container">
+             <div class="row"> 
+              <div class="col col-12 text-center">
+                <a href="tel:19788580200" class="nav-phone"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/1-888-95-shred.png" /></a>
               </div>
+             </div>
            </div>
-         </div>
+        </div>
+
+        <div class="container-fluid menuSection">
+          <div class="container">
+             <div class="row"> 
+                <nav id="mainNav">
+                  <?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'container' => '' ) ); ?>
+                </nav>
+
+                <div id="mobileNavButtons">
+                  <a href="javascript:void(0);" class="mobileMenuToggle">
+                    <i class="fa fa-bars"></i>
+                    <span>MENU</span>
+                  </a>
+                  <a href="tel:19788580200" class="nav-phone">
+                    <i class="fa fa-phone"></i>
+                    <span>CALL</span>
+                  </a>
+
+                  <a href="<?php echo bloginfo('url'); ?>/contact-us/" class="nav-contact">
+                    <i class="fa fa-envelope"></i>
+                    <span>CONTACT</span>
+                  </a>
+                </div>
+             </div>
+           </div>
+          </div>
         </div>
       </div>
    </header>
