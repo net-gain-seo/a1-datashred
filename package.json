@@ -1,5 +1,5 @@
 {
-  "name": "a1-datahsred",
+  "name": "a1datashred",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,11 +9,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.0.0",
-    "gulp-cli": "^1.4.0",
-    "gulp-notify": "^3.0.0",
-    "gulp-sass": "^3.2.1",
-    "gulp-sourcemaps": "^2.6.1"
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-cli": "^2.2.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
+  },
+  "dependencies": {
+    "react-google-maps": "^9.4.5"
   }
 }

@@ -53,7 +53,7 @@ gulp.task('watch', function() {
   return gulp
     // Watch the input folder for change,
     // and run `sass` task when something happens
-    .watch(cssSrc, ['sass'])
+    .watch(cssSrc,  gulp.series(['sass']))
     // When there is a change,
     // log a message in the console
     .on('change', function(event) {
@@ -61,6 +61,6 @@ gulp.task('watch', function() {
     });
 });
 
-gulp.task('default', ['sass', 'watch']);
+gulp.task('default', gulp.series(['sass', 'watch']));
 
 // The array passed as second argument of the task(..) function is a list of dependency tasks. Basically, it tells Gulp to run those tasks before running the one specified as a third argument (if any).
