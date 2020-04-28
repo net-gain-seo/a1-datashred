@@ -26,11 +26,11 @@
             <div class="row pb-0">
                 <div class="col col-3">
                     <div class="socialIcons">
-                        <a href="https://www.facebook.com/allmediashred/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/social/facebook.png" /></a>
-                        <a href="https://twitter.com/A1DATASHRED?lang=en" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/social/twitter.png" /></a>
-                        <a href="https://www.linkedin.com/company/a1-datashred" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/social/linked-in.png" /></a>
+                        <a href="https://www.facebook.com/allmediashred/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/social/facebook.png" alt="facebook profile" /></a>
+                        <a href="https://twitter.com/A1DATASHRED?lang=en" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/social/twitter.png" alt="twitter profile" /></a>
+                        <a href="https://www.linkedin.com/company/a1-datashred" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/social/linked-in.png" alt="linkedin profile" /></a>
                     </div>
-                    <a href="https://www.google.com/search?q=a1+datashred+boston&oq=a1+datashred+boston&aqs=chrome..69i57.3087j1j7&sourceid=chrome&ie=UTF-8#lrd=0x89e371c55da4250d:0x445a24481af83378,1,,," target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/review-us-on-google.png" /></a>
+                    <a href="https://www.google.com/search?q=a1+datashred+boston&oq=a1+datashred+boston&aqs=chrome..69i57.3087j1j7&sourceid=chrome&ie=UTF-8#lrd=0x89e371c55da4250d:0x445a24481af83378,1,,," target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/review-us-on-google.png" alt="Review us on Google"/></a>
                 </div>
                 <div class="col col-3 text-right hoursAddress">
                     <span><strong>Hours</strong></span><br/>

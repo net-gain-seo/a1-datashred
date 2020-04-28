@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+    <!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-KLXWTP3');</script>
+	<!-- End Google Tag Manager -->
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="http://gmpg.org/xfn/11">
    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png" />
     <?php wp_head(); ?>
-
 </head>
 
 <body <?php body_class(); ?>>
-
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KLXWTP3"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
   <nav id="mobileNav">
     <a href="#" class="btn mobileMenuToggle">Close</a>
     <?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'container' => '' ) ); ?>
@@ -24,8 +33,8 @@
                 <a id="logo" href="<?php bloginfo('url') ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/a1-data-shred-logo.png" /></a>
               </div>
               <div class="reviewSection">
-                <a href="https://www.google.com/search?q=a1+datashred+boston&oq=a1+datashred+boston&aqs=chrome..69i57.3087j1j7&sourceid=chrome&ie=UTF-8#lrd=0x89e371c55da4250d:0x445a24481af83378,1,,," target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/review-us-on-google.png" /></a>
-                <a href="tel:19788580200" class="nav-phone"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/1-888-95-shred.png" /></a>
+                <a href="https://www.google.com/search?q=a1+datashred+boston&oq=a1+datashred+boston&aqs=chrome..69i57.3087j1j7&sourceid=chrome&ie=UTF-8#lrd=0x89e371c55da4250d:0x445a24481af83378,1,,," target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/review-us-on-google.png" alt="Review us on Google" /></a>
+                <a href="tel:19788580200" class="nav-phone"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/1-888-95-shred.png"/></a>
               </div>
            </div>
         </div>
