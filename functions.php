@@ -11,25 +11,40 @@ function my_theme_enqueue_styles() {
     );
     wp_enqueue_style( 'Lato', 'https://fonts.googleapis.com/css?family=Lato' );
     wp_enqueue_style('Roboto', 'https://fonts.googleapis.com/css?family=Roboto+Condensed');
-
-
 }
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 
-function ns_child_scripts() {
-
-    //wp_enqueue_script( 'child-custom', get_bloginfo('template_url') . '/js/custom.js', 'jquery', '1.6.0', true );
-
+function a1_scripts() {
+    wp_enqueue_script( 'a1_scripts', get_stylesheet_directory_uri() . '/js/scripts.js', 'jquery', '2.9', true );
 }
-add_action( 'wp_enqueue_scripts', 'ns_child_scripts' );
+add_action( 'wp_enqueue_scripts', 'a1_scripts', 1 );
 
+function header_code(){
+?>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KLXWTP3');</script>
+    <!-- End Google Tag Manager -->
+    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png" />
+<?php
+}
+add_action('wp_head', 'header_code');
+
+function footer_code(){
+?>
+    <!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KLXWTP3"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+<?php
+}
 
 
 add_image_size( 'featuredBlogImage', 330,380 , true );
 add_image_size( 'featuredBlogImage2', 330,155 , true );
-
-
-
 
 
 /**
@@ -266,12 +281,3 @@ function update_post_meta_box( $post_id, $post ) {
 }
 
 add_action( 'save_post', 'update_post_meta_box', 10, 2 );
-
-
-
-
-
-function a1_scripts() {
-    wp_enqueue_script( 'a1_scripts', get_stylesheet_directory_uri() . '/js/scripts.js', 'jquery', '2.9', true );
-}
-add_action( 'wp_enqueue_scripts', 'a1_scripts', 1 );
